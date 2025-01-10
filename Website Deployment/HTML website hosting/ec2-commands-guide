@@ -1,1 +1,41 @@
+use any web browser to access a hosted website, but the default document root (where the server looks for website files) 
+varies based on the web server and Linux distribution. When deploying a website,you may need to modify the default hosting path to match your application's requirements.
 
+
+# Commands to host website on Amazon linux or Redhat based distribution
+
+sudo yum install httpd -y (apache)
+sudo service httpd start
+cd /var/www/html
+sudo nano index.html
+
+# Commands on debian based distribution
+
+sudo apt install httpd -y (apache)
+sudo service httpd start
+cd /var/www/html
+sudo nano index.html
+
+# Default Hosting Paths
+
+Nginx :
+
+Debian/Ubuntu:
+/var/www/html
+
+RHEL/CentOS/Amazon Linux:
+/usr/share/nginx/html
+
+SUSE Linux:
+/srv/www/htdocs
+
+Apache (HTTPD)
+
+Debian/Ubuntu:
+/var/www/html
+
+RHEL/CentOS/Fedora/Amazon Linux:
+/var/www/html
+
+SUSE Linux:
+/srv/www/htdocs
