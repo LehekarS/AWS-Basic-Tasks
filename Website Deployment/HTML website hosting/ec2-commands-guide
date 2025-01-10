@@ -4,17 +4,11 @@ varies based on the web server and Linux distribution. When deploying a website,
 
 # Commands to host website on Amazon linux or Redhat based distribution
 
-sudo yum install httpd -y (apache)
+sudo yum install httpd -y 
 sudo service httpd start
 cd /var/www/html
 sudo nano index.html
 
-# Commands on debian based distribution
-
-sudo apt install httpd -y (apache)
-sudo service httpd start
-cd /var/www/html
-sudo nano index.html
 
 # Default Hosting Paths
 
