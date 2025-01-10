@@ -39,3 +39,13 @@ RHEL/CentOS/Fedora/Amazon Linux:
 
 SUSE Linux:
 /srv/www/htdocs
+
+
+# Note:
+   add port 80 in security group of ec2
+
+# Restart your web server:
+Apache: sudo systemctl restart apache2 or sudo systemctl restart httpd.
+Nginx: sudo systemctl restart nginx.
+
+# Host your website using public IP of your ec2
