@@ -1,0 +1,13 @@
+mkdir nodejs
+cd nodejs/
+sudo yum install -y nodejs
+npm -v
+node -v
+nano app.js   # file with application code
+nano package.json    # dependencies to run nodejs app
+sudo nano /etc/nginx/nginx.conf    #  modify configuration file to proxy pass
+service nginx restart
+npm install -g pm2   # to run node app in background
+pm2 start app.js --name "my-node-app"
+
+# using public IP try to access app
