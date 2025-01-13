@@ -1,0 +1,11 @@
+sudo yum install python3 python3-pip nginx -y    # installing python , pip and nginx 
+pip3 install virtualenv   # isolated Python environment 
+mkdir python_app
+cd pyton_app
+virtualenv venv   
+source venv/bin/activate   # activate our directory as virtual env
+gunicorn --bind 127.0.0.1:5000 main:app --demon  # test the application on 5000 port , add port
+sudo nano /etc/nginx/nginx.conf  # modify the config file ,add proxy_pass
+systemctl reload nginx
+
+# using public ip test the application
