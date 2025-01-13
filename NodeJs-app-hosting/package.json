@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-express-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js app using Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "app"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
